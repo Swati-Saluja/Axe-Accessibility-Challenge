@@ -1,0 +1,200 @@
+/* Quick Reset */
+* {margin: 0;
+ padding: 0;
+  list-style: none;
+   line-height: 1;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+/* Backgrounds */   /*why 2 times background :center and background -size:cover*/
+.background {background: center center no-repeat; -webkit-background-size: cover; background-size: cover; position: fixed; z-index: -1; left: 0; right: 0; top: 0; bottom: 0; opacity: 0.75;}
+.background.background-0 {background-image: url("https://titanicsound.files.wordpress.com/2014/11/titanic_movie-hd-1.jpg");}
+.background.background-1 {background-image: url("http://images.contentful.com/7h71s48744nc/6Sp8KBvgiIeKeiKMsce66C/5fd02734d7bd3f559321f67f794c125d/titanic.jpg");}
+.background.background-2 {background-image: url("http://media.hollywood.com/images/638x425/5650042.JPG");}
+.background.background-3 {background-image: url("http://wallpapercave.com/wp/1PxYL2Y.jpg");}
+.background.background-4 {background-image: url("http://hdqwalls.com/download/titanic-movie-full-hd-2048x1152.jpg");}
+.background.background-5 {background-image: url("http://www.etonline.com/movies/2015/02/24134343/set_titanic_leonardo_dicaprio_kate_winslet.jpg");}
+.background.background-6 {background-image: url("https://cdn.theculturetrip.com/wp-content/uploads/2016/02/maxresdefault13.jpg");}
+.background.background-7 {background-image: url("https://media1.britannica.com/eb-media/53/93453-004-2CEB215D.jpg");}
+.background.background-8 {background-image: url("http://wallpapercave.com/wp/EKA4vbo.jpg");}
+.background.background-9 {background-image: url("http://a.abcnews.com/images/Technology/ap_titanic_movie_leo_kate_winslet_thg_120403_wmain.jpg");}
+.background.background-10 {background-image: url("http://media.hollywood.com/images/l/6350468.jpg");}
+
+/* General Styles */
+body {font-family: 'Open Sans', sans-serif;
+ font-size: 10pt;
+  padding: 0 35px;
+  background-color: #000;
+}
+strong {
+	font-weight: 500;
+}
+
+/* feedback counter */
+.counter{
+  border: 1px solid #ccc; /*parent is container then why are we using margin:Auto instead of text-align:center*/
+  border-radius: 5px;
+  width:80px;
+  color:green;
+  font-weight: 900;
+  background-color: #ccc;
+  margin:auto;
+  height:24px;
+  overflow: hidden;
+     -webkit-box-shadow: 0 0 3px #090;
+      -moz-box-shadow: 0 0 3px #090;
+    
+}
+
+/* Progress Bar */
+.progress {
+	width: 200px; 
+border: 1px solid #ccc;
+ margin: 25px auto;
+  border-radius: 5px;
+   background-color: #ccc;
+    overflow: hidden;
+     -webkit-box-shadow: 0 0 3px #090;
+      -moz-box-shadow: 0 0 3px #090;
+       box-shadow: 0 0 3px #090;}
+.progress .bar {
+ width: 0%;
+ height: 25px;
+ background-color: #cfc;
+text-align: center;
+    line-height: 25px;
+}
+
+.progress .bar.bar-1 {width: 10%;}
+.progress .bar.bar-2 {width: 20%;}
+.progress .bar.bar-3 {width: 30%;}
+.progress .bar.bar-4 {width: 40%;}
+.progress .bar.bar-5 {width: 50%;}
+.progress .bar.bar-6 {width: 60%;}
+.progress .bar.bar-7 {width: 70%;}
+.progress .bar.bar-8 {width: 80%;}
+.progress .bar.bar-9 {width: 90%;}
+.progress .bar.bar-10 {width: 100%;}
+
+/* Heading Stuff */
+h1, h2, h3, h4, h5, h6 {font-family: 'Montserrat', sans-serif; 
+font-weight: normal;
+}
+
+/* Container */
+/* Should be half the width.
+   Should be centred.
+   Should not exceed a certain width.
+*/
+.container {
+	margin: 75px auto;
+ min-width: 300px; 
+ max-width: 750px;
+  background-color: rgba(255,255,255,0.5); 
+  border-radius: 3px;
+   padding: 15px;
+}
+
+.container h1 {
+	text-align: center; 
+	padding: 0 15px;
+	 margin: 0 0 15px; 
+	 text-shadow: 0 0 2px rgba(0,0,0,0.5);}
+.container .intro {
+	padding: 15px;
+ background-color: rgba(255,255,255,0.75);
+  margin: 0 15px;
+   border-radius: 5px;
+}
+.container .intro p {
+	text-align: justify;
+	 line-height: 1.5;
+	  margin: 15px 0 0;}
+.container .intro p:first-child {
+	margin: 0;}
+/* Questions & Answers */
+.container .intro h2 {
+	font-size: 1.25em; 
+	line-height: 1.5;
+}
+.container .intro .answers li {
+	position: relative; 
+	overflow: hidden;
+	 width: 75%;
+	}
+.container .intro .answers li input {
+	position: absolute;
+	 left: -150px;		/*to remove radio buttons, in some browsers display:none doesn't work*/
+	}    
+.container .intro .answers li label {
+	display: block;
+ padding: 8px;
+  border: 1px solid #ccf;
+   border-radius: 3px;
+    margin: 10px 0 0; 
+    line-height: 1.2;
+     cursor: pointer;}
+.container .intro .answers li label:hover {
+	background-color: #ccf;
+}
+
+.container .intro .answers li input:checked + label,
+.container .intro .answers li input:checked + label:hover {
+	background-color: #cfc;
+	 border-color: #f90;
+	}
+
+.container .intro .action-buttons {
+	text-align: center;
+}
+.container .intro .action-buttons .btn {
+	display: inline-block;
+	 margin: 15px 15px 0;}
+
+/* Button Styles */
+.btn {border: 2px solid #99f;
+ line-height: 1.5;
+  padding: 5px;
+   display: block;
+    width: 100px;
+     text-align: center;
+      text-decoration: none;
+       font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+         margin: 15px auto 0;
+          border-radius: 3px;
+           color: #33f;
+            -webkit-transition: background 0.5s linear;
+             -moz-transition: background 0.5s linear;
+            -ms-transition: background 0.5s linear;
+             -o-transition: background 0.5s linear; transition: background 0.5s linear;
+              background-color: transparent;
+               cursor: pointer;
+           }
+.btn:hover {
+	background-color: #ccf;
+}
+
+.btn.disabled, .btn.disabled:hover, .btn:disabled, .btn:disabled:hover {
+	color: #999; 
+	border-color: #999; 
+	cursor: not-allowed; 
+	background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

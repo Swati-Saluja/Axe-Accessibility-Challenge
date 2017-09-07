@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Titanic Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
+    <!-- <link href="fl-grd.css" rel="stylesheet"> -->
+    <link href="index.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Open+Sans:400,600" rel="stylesheet" />
+  </head>
+      
+  <body>
+    <main role="main">
+    <div class="background background-0"></div>
+    <div class="container">
+      <h1>Titanic Quiz</h1>
+      <!-- <div class="counter" hidden>1/10</div> -->
+      <div class="progress" hidden>
+        <div class="bar bar-0"></div>
+      </div>
+      <div id="intro" class="intro" >
+        <p> This quiz contains 10 questions about the movie 'Titanic'.</p>
+        <p> Each question carries one point. </p>
+        <p> You are required to select one option in each question.</p> 
+        <p> You can always go back and change your answer if you wish to.</p>
+        <a href="#" class="btn next">Start</a>
+      </div>
+
+      <form role="form" action="" class="intro" id="questions" hidden>
+        <h2>Question #<strong id="q-no">QNO</strong>: <span id="q-text">Question here with a double line?</span></h2>
+        <ul class="answers" aria-labelledby="answer-1 answer-2 answer-3 answer-4">
+          <li><input type="radio" id="answer-1" name="answer" class="answer" aria-labelledby="answer-1 answer-2 answer-3 answer-4" /><label for="answer-1">Answer 1</label></li>
+          <li><input type="radio" id="answer-2" name="answer" class="answer" aria-labelledby="answer-1 answer-2 answer-3 answer-4"/><label for="answer-2">Answer 2</label></li>
+          <li><input type="radio" id="answer-3" name="answer" class="answer" aria-labelledby="answer-1 answer-2 answer-3 answer-4"/><label for="answer-3">Answer 3</label></li>
+          <li><input type="radio" id="answer-4" name="answer" class="answer" aria-labelledby="answer-1 answer-2 answer-3 answer-4"/><label for="answer-4">Answer 4</label></li>
+        </ul>
+        <result></result>
+        <div class="action-buttons">
+          <button class="btn prev" disabled>Previous</button>
+          <button class="btn next" disabled>Next</button>
+        </div>
+      </form>
+      <div id="exit" class="intro" hidden>
+        <p>Thank you. Here's a summary of what you have done.</p>
+        <pre></pre>
+        <a href="" class="btn">Retake?</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  </main>
+  </body>
+  
+</html>
